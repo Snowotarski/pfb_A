@@ -1,0 +1,501 @@
+   28  brew update
+   29  sort fascin.rtf | uniq > unique.out
+   30  open unique.out 
+   31  rn unique.out unique.txt
+   32  mv unique.out unique.txt
+   33  ls
+   34  open unique.txt 
+   35  rm unique.txt 
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd Applications/
+   40  la -l | less
+   41  ls -l |more 
+   42  q
+   43  ls -l | less
+   44  cd 
+   45  ls
+   46  cd Documents/
+   47  ls
+   48  nano firstfile.txt
+   49  vi secondfile.txt
+   50  open secondfile
+   51  open secondfile.txt
+   52  vi secondfile.txt
+   53  open secondfile.txt
+   54  mv secondfile.txt vi_tips.txt
+   55  ls
+   56  mkdir prog4biol
+   57  mv *.txt prog4biol/
+   58  ls
+   59  mv fascin.rtf prog4biol/
+   60  ls
+   61  mv prog4biol/
+   62  ls
+   63  cd prog4biol/
+   64  ls
+   65  cd ..
+   66  ls
+   67  prog4biol
+   68  mkdir prog4biol_problemsets
+   69  cd prog4biol_problemsets/
+   70  ls
+   71  git init
+   72  git
+   73  git commit
+   74  ls
+   75  git init
+   76  git add README.md
+   77  git commit -m "first commit"
+   78  git remote add origin https://github.com/Snowotarski/prog4biol_problemsets.git
+   79  git push -u origin master
+   80  git push -u origin master
+   81  ls
+   82  git update
+   83  git --help
+   84  git push
+   85  git remote add origin https://github.com/Snowotarski/prog4biol_problemsets.git
+   86  git push -u origin master
+   87  git init
+   88  git add README.md
+   89  git commit -m "first commit"
+   90  git remote add origin https://github.com/Snowotarski/prog4biol_problemsets.git
+   91  git push -u origin master
+   92  ls
+   93  vi testData.txt
+   94  ls
+   95  git push -u origin master
+   96  man head
+   97  ls
+   98  cd ..
+   99  ls
+  100  cd ,,
+  101  cd ..
+  102  ls
+  103  cd pfb2018
+  104  ls
+  105  cd ..
+  106  ls
+  107  cd pfb2018_problemsets/
+  108  ls
+  109  rm unix1.txt
+  110  mv unixProblemSetFile1.txt cancer_genes.fasta
+  111  ls
+  112  cutl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt
+  113  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt
+  114  ls
+  115  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt history
+  116  history
+  117  open cuffdiff.txt 
+  118  head cuffdiff.txt 
+  119  head cuffdiff.txt
+  120  ls
+  121  echo 'log fold change best guess is column 8 since there was no header for columns' >unix1_answers.txt
+  122  open unix1_answers.txt 
+  123  man sort
+  124  sort -k 8 -n < cuffdiff.txt
+  125  sort -k 8 -n < cuffdiff.txt > sorted.cuffdiff.out
+  126  head sorted.cuffdiff.
+  127  sort -k 8 -n -r < cuffdiff.txt > sorted.cuffdiff.out |head -100 <sorted.cuffdiff.out 
+  128  head sorted.cuffdiff.out 
+  129  head -100 sorted.cuffdiff.out 
+  130  head -100 < sorted.cuffdiff.out > top.100.sorted.cuffdiff.txt
+  131  man cat
+  132  man head
+  133  man awk
+  134  ls
+  135  awk '{print $1}' | uniq > differentially.expressed.genes.txt
+  136  ls
+  137  cd Documents/
+  138  ls
+  139   rm prog4biol_problemsets
+  140  ls
+  141  mkdir pfb_A
+  142  cd pfb_A/
+  143  ls
+  144  echo "# pfb_A" >> README.md
+  145  git init
+  146  git add README.md
+  147  git commit -m "first commit"
+  148  git remote add origin https://github.com/Snowotarski/pfb_A.git
+  149  git push -u origin master
+  150  ls
+  151  vim test.txt
+  152  ls
+  153  git add test.txt
+  154  git commit -m 'added line of text'
+  155  git push origin master
+  156  ls
+  157  cd ..
+  158  ls
+  159  git clone https://github.com/srobb1/pfb2017.git
+  160  ls
+  161  rm prog4biol
+  162  rm -r prog4biol/
+  163  ls
+  164  cd pfb2017/
+  165  ls
+  166  open README.md
+  167  history
+  168  git clone https://github.com/prog4biol/pfb2017.git
+  169  ls
+  170  cd ..
+  171  ls
+  172  cd pfb2017
+  173  ls
+  174  rm README.md
+  175  ls
+  176  cd pfb2017/
+  177  ls
+  178  git pull
+  179  git status
+  180  ls -l
+  181  ls -lt
+  182  ls -lt | head
+  183  date ; sleep 2 ; date
+  184  cd ~
+  185  cd ~
+  186  pwd
+  187  cd ..
+  188  ls
+  189  cd stn
+  190  ls
+  191  cd Documents/
+  192  ls
+  193  cd pfb2017/
+  194  ls
+  195  cd pfb2017/
+  196  ls
+  197  cd ..
+  198  ls
+  199  cd ..
+  200  ls
+  201  cd ..
+  202  ls
+  203  cd Document
+  204  cd Documents/
+  205  ls
+  206  mkdir problemsets
+  207  ks
+  208  ls
+  209  cd problemsets/
+  210  ls
+  211  pwd
+  212  wget https://raw.githubusercontent.com/srobb1/pfb2017/master/files/sequences.nt.fa
+  213  cutl -0 https://raw.githubusercontent.com/srobb1/pfb2017/master/files/sequences.nt.fa
+  214  curl -0 https://raw.githubusercontent.com/srobb1/pfb2017/master/files/sequences.nt.fa
+  215  cd ..
+  216  kls
+  217  ls
+  218  cd pfb2017/
+  219  ls
+  220  hitory
+  221  history
+  222  rm -r pfb2017/
+  223  ls
+  224  cd pfb2017/
+  225  ls
+  226  cd ..
+  227  ls
+  228  rm -r pfb2017/
+  229  cd ..
+  230  ls
+  231  rm -r pfb2017
+  232  ls
+  233  cd pfb2017/
+  234  ls
+  235  cd pfb2017/
+  236  ls
+  237  ls
+  238  cd ..
+  239  ls
+  240  cd ..
+  241  ls
+  242  cd ..
+  243  cd ~
+  244  ls
+  245  cd Documents/
+  246  ls
+  247  git clone https://github.com/prog4biol/pfb2018.git
+  248  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+  249  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+  250  ls
+  251  cd pfb2018/
+  252  ls
+  253  cd problemsets/
+  254  ls
+  255  open Unix_01_problemset.md 
+  256  history
+  257   curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa > unixProblemSetFile1.txt
+  258  ls
+  259  mv unixProblemSetFile1.txt problemsets
+  260  ls
+  261  cd ..
+  262  cd /../..
+  263  ls
+  264  cd usrt
+  265  cd usr
+  266  ls
+  267  cd ..
+  268  ls
+  269  cd !
+  270  cd ~
+  271  ks
+  272  ls
+  273  cd Documents/
+  274  ls
+  275  cd problemsets
+  276  ls
+  277  ls
+  278  cd pfb2018
+  279  ls
+  280  cd ls
+  281  ls
+  282  pwd
+  283  cd ..
+  284  ls
+  285  cd pfb2018/
+  286  ls
+  287  cd problemsets/
+  288  ls
+  289  history
+  290  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa > unixProblemSetFile1.txt
+  291  ls
+  292  cd ..
+  293  ls
+  294  cd ,,
+  295  cd ..
+  296  ls
+  297  mkdir pfb2018_problemsets
+  298  lks
+  299  ls
+  300  cd pfb2018
+  301  ls
+  302  cd pro
+  303  cd pro
+  304  lscd problemsets/
+  305  ls
+  306  cd problemsets/
+  307  ls
+  308  mv unixProblemSetFile1.txt pfb2018_problemsets
+  309  lks
+  310  ls
+  311  cd ..
+  312  ks
+  313  ls
+  314  cd ..
+  315  ls
+  316  cd pfb2018_problemsets/
+  317  ls
+  318  cd pfb
+  319  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa > unixProblemSetFile1.txt
+  320  ls
+  321  cd ..
+  322  ls
+  323  rm -r problemsets/
+  324  ls
+  325  cd pfb2018_problemsets/
+  326  ls
+  327  open unixProblemSetFile1.txt 
+  328  wc -l <unixProblemSetFile1.txt > unix1_answers.txt
+  329  open unix1_answers.txt 
+  330  man wc
+  331  wc -m <unixProblemSetFile1.txt  >>unix1_answers.txt 
+  332  open unix1_answers.txt 
+  333  print "testing string addition" >> unix1_answers.txt 
+  334  'test string' >> unix1_answers.txt 
+  335  echo 'first line is how many lines in p53 fasta, second is how many characters' >> unix1_answers.txt 
+  336  open unix1_answers.txt 
+  337  man head
+  338  man tail
+  339  man head
+  340  echo 'first lines of file via head function below:' >>unix1_answers.txt 
+  341  head unixProblemSetFile1.txt  >> unix1.txt
+  342  open unix1
+  343  open unix1.txt
+  344  ls
+  345  open unix1_answers.txt 
+  346  head unixProblemSetFile1.txt >> unix1_answers.txt 
+  347  man tail
+  348  echo 'above is the head of the p53 fasta, below is the tail:' >>unix1_answers.txt 
+  349  tail unixProblemSetFile1.txt >> unix1_answers.txt 
+  350  echo 'the nubmer of sequences in the file as determined by < =' >> unix1_answers.txt 
+  351  open unix1_answers.txt 
+  352  grep > < unixProblemSetFile1.txt | wc -l >> unix1_answers.txt 
+  353  grep '>' < unixProblemSetFile1.txt | wc -l >> unix1_answers.txt 
+  354  open unix1_answers.txt 
+  355  open unixProblemSetFile1.txt 
+  356  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt >cuffdiff.txt
+  357  ls
+  358  head cuffdiff.txt 
+  359  man sort
+  360  sort --h
+  361  sort -help
+  362  man sort
+  363  ls
+  364  cd Do
+  365  cd Documents/
+  366  ls
+  367  cd pfb2018_problemsets/
+  368  ls
+  369  awk '{print $1}' top.100.sorted.cuffdiff.txt | uniq > differentially.expressed.genes.txt
+  370  open differentially.expressed.genes.txt 
+  371  ls
+  372  cd Documents/
+  373  ls
+  374  cd pfb2018_problemsets/
+  375  ls
+  376  cd ..
+  377  ls
+  378  cd pfb2018
+  379  ls
+  380  cd ..
+  381  ls
+  382  git clone https://github.com/Snowotarski/pfb_A.git
+  383  ls
+  384  mv pfb2018_problemsets pfb_A
+  385  ls
+  386  cd pfb_A
+  387  ls
+  388  mv pfb2018_problemsets unix1_Q
+  389  ls
+  390  bit update
+  391  man git
+  392  git statud
+  393  git status
+  394  git add
+  395  git add unix1_Q/
+  396  git commit -m 'added unix problemset1'
+  397  git push origin master
+  398  git status
+  399  ls -al ~/.ssh
+  400  cd ~
+  401  ls
+  402  ls -al ~/.ssh
+  403  grep id_*.pub > sshLook.txt
+  404  grep id_*pub
+  405  ls
+  406  cd Documents/
+  407  ls
+  408  cd pfb_A
+  409  ls
+  410  git status
+  411  ssh-keygen -t rsa -b 4096 -C "stn@stowers.org""
+ls
+
+  412  ssh-keygen -t rsa -b 4096 -C "stn@stowers.org"
+  413  eval "$(ssh-agent -s)"
+  414  open ~/.ssh/config
+  415  Host *
+  416    AddKeysToAgent yes
+  417    UseKeychain yes
+  418    IdentityFile ~/.ssh/id_rsa
+  419  config
+  420  pwd
+  421  cd usr/stn/.ssh
+  422  cd ..
+  423  cd ..
+  424  cd ~
+  425  ls
+  426  pwd
+  427  rm sshLook.txt 
+  428  ls
+  429  ls -a 
+  430  cd .ssh
+  431  ls
+  432  cd ..
+  433  cd ~
+  434  ls
+  435  cd Documents/
+  436  ls
+  437  cd pfb_A/
+  438  ls
+  439  ssh-add -K ~/.ssh/id_rsa
+  440  pbcopy < ~/.ssh/id_rsa.pub
+  441  ls
+  442  mkdir files
+  443  ls
+  444  cd unix1_Q
+  445  ls
+  446  mv cancer_genes.fasta files
+  447  ls
+  448  cd..
+  449  cd ..
+  450  ks
+  451  ls
+  452  cd files/
+  453  ls
+  454  ls
+  455  cd ..
+  456  ls
+  457  cd unix1_Q/
+  458  ls
+  459  cd files
+  460  ls
+  461  ls
+  462  cd files 
+  463  ls
+  464  cd files
+  465  open files
+  466  mv files cancer_genes.fasta
+  467  mv cancer_genes.fasta /..
+  468  pwd
+  469  mv cancer_genes.fasta /Users/stn/Documents/pfb_A/
+  470  ls
+  471  cd ..
+  472  ls
+  473  mv cancer_genes.fasta files
+  474  ls
+  475  cd files
+  476  ls
+  477  git add cancer_genes.fasta 
+  478  git commit -m 'switched cancer_genes.fasta location'
+  479  git push
+  480  git status
+  481  git add *
+  482  git commit -m 'resolved all changes'
+  483  git push
+  484  vm 
+  485  vim mysequences.txt
+  486  ls
+  487  git add mysequences.txt 
+  488  git commit -m 'added mysequenes.txt'
+  489  git push
+  490  git status
+  491  git add *
+  492  git commit 
+  493  git push
+  494  git status
+  495  mkdir fastas
+  496  ls
+  497  man cp
+  498  cp cancer_genes.fasta fastas
+  499  ls
+  500  cd fastas
+  501  ls
+  502  cd ..
+  503  ls
+  504  rm -r cancer_genes.fasta 
+  505  ls
+  506  cd fasta
+  507  cd fastas/
+  508  ls
+  509  git add all *
+  510  git add *
+  511  git commit
+  512  git push
+  513  git status
+  514  echo history > unixBasics.history.txt
+  515  ls
+  516  pwd
+  517  mv unixBasics.history.txt /Users/stn/Documents/pfb_A
+  518  ls
+  519  cd ..
+  520  ls
+  521  cd ..
+  522  ls
+  523  vim unixBasics.history.txt 
+  524  history
+  525  print history > unixBasics.history.txt 
+  526  history > unixBasics.history.txt 
