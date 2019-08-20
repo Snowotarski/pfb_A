@@ -1,0 +1,122 @@
+List of Python Notes and Tips 
+
+(1) A better way to run python scripts- MAKE EXECUTABLE
+	from command line: % chmod +x filename.py
+	look at permissions: % ls -l filename.py
+	go back into filename.py:
+		add at line 1 : #!/usr/bin/env python3
+	now run script: % ./filename.py
+
+SYNTAX 
+-Identifiers are names used to ID a variable, function class etc
+
+- identifiers starts with letter A-Z or an _ followed by 0 or more letters, _ or # (0-9)
+
+-python does not allow punctuation characters. 
+
+-python is case sensitive! 
+
+Naming Conventions
+- first character is lower case unless it is a CLASS 
+-private identifiers beging with _ 
+-strong private identifiers start with 2 _ : __ 
+-language defined spacial names begin adn end with 2 _: _ex_
+
+Reserved Words
+- if it already has a use in python, it's off limits: 
+and 		exec		or
+as 		finally		pass
+assert		for 		print
+break		fromm		raise
+class 		globAL		return
+continue	if		try
+def		import		while
+del		in		with
+elif		is		yield
+else		lambda
+except 		not 
+
+Lines and Indentations
+-python denotes blocks of code by indentation
+-use a good IDE to help you out with this
+-#spaces need to be consistent, but not specific! 
+
+Comments
+- all comments start with #
+-first line of a script that starts with #! is specialcomment that also has a specific function in unix (see (1) above)
+
+Blank Lines: Use them to make the code more readable and separate pieces that go toether to make paragraphs
+
+Data Types and Variables
+-python data types are either imutable or not. # stringsand tuples cannot be changed. Lists, dictionaries adn sets CAN be chaned. So can individual variables (scalar)
+	
+	Numbers and Strings
+		gene_count = 5
+		gene_count = 10
+			give variables names that make sense 			with the data they store~
+		
+
+		count = 10 #integer
+		average = 2.5 #float
+		message = "python" #string
+		
+		-colletions of data can be stored in special 			datatypes (tuples, sets, lists and dictio			naries)
+		- in these collections do try to store like w			with like data. 
+TUPLES 
+-similar to lists and contain ordered, indexed collections of data
+- they are immutable
+-enclosed in () and items are separated by , 
+	('Jan' , 'Feb' , 'Mar')
+-index starts with 0 (Jan =0, Mar=2)
+
+DICTIONARY 
+-good for storing data that can be represented as a 2 column table. 
+-store unordered collections of key/value pairs
+-enclosed in {}
+-colons betw key value: 
+{'TP53' : 'ATGGGC' , 'BRCA1' : 'ATGGGT' }
+
+LISTS
+-store ordered , indexed collection of data
+-these ARE MUTABLE (unlike Tuples)
+-enclose in []
+['atg', 'aaa' , 'agg']
+-inde also starts at 0 here atg=0, agg=2
+
+COMMAND LINE PARAMETERS
+-follow name sos scrit or program and have spaces bwtw.
+-allow passing of info to script on command line when script is being run
+-python stores all the pieces o the command line in a special list: sys.argv
+-to import the sys module at teh beginning of the script
+
+		#!/usr/bin/env python3
+		import sys #imports sys command line module
+
+		$ friends.py Joe Anita   #typed on command line
+		
+		#!/usr/bin/env python3
+		import sys
+		friend1 = sys.argv[1] # get first command line parameter
+		friend2 = sys.argv[2] # get second command line parameter
+		# now print a message to the screen
+		print(friend1,'and',friend2,'are friends')
+
+-sys module allows input from command line (standard input) to be passed to python script before it runs. Super handy! 
+
+- this allows one to write a general script (function) and pass through diff info multiple times 
+
+IDENTIFYING WHAT KIND OF OBJECT YOU ARE WORKING WITH
+how do you find out whad kind of data an identifier holds so you know how to manipulate it... 
+
+type()  # which class your object belongs to
+dir()   # which methods are available for object  
+id()    # the unique object id 
+
+>>> data = [2,4,6]
+>>> type(data)
+<class 'list'>
+>>> data = 5
+>>> type(data)
+<class 'int'>
+
+
